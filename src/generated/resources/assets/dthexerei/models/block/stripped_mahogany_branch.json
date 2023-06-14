@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "hexerei:block/stripped_mahogany_log",
+    "rings": "hexerei:block/stripped_mahogany_log_top"
+  }
+}

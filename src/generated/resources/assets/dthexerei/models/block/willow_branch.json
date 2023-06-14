@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "hexerei:block/willow_log",
+    "rings": "hexerei:block/willow_log_top"
+  }
+}

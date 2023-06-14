@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="[40,41)"
+license="MIT"
+issueTrackerURL="https://github.com/DynamicTreesTeam/DynamicTrees-Hexerei/issues"
+
+[[mods]]
+modId="dthexerei"
+version="${file.jarVersion}"
+displayName="Dynamic Trees for Hexerei"
+
+updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/Hexerei.json?raw=true"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-hexerei"
+
+authors="Max Hyper" #optional
+description='''
+Compatibility Mod between Dynamic trees and Hexerei
+'''
+
+[[dependencies.dthexerei]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,41)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dthexerei]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dthexerei]]
+    modId="dynamictrees"
+    mandatory=true
+    versionRange="[1.0.3,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dthexerei]]
+    modId="dynamictreesplus"
+    mandatory=false
+    versionRange="[1.0.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dthexerei]]
+    modId="hexerei"
+    mandatory=true
+    versionRange="[0.2.2,0.3.0)"
+    ordering="AFTER"
+    side="BOTH"
+
