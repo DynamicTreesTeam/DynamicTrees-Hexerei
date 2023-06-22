@@ -15,8 +15,8 @@
       "name": "vines",
       "properties": {
         "vine_type": "CEILING",
-        "block": "hexerei:willow_vine_plant",
-        "tip_block": "hexerei:willow_vine",
+        "block": "hexerei:willow_vines_plant",
+        "tip_block": "hexerei:willow_vines",
         "max_length": 7,
         "quantity": 24,
         "fruiting_radius": 6

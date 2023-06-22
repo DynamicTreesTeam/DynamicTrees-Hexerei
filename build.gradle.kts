@@ -94,7 +94,7 @@ dependencies {
     //Hexerei has 3rd party downloads disabled, so we cannot use the maven :(
     //download the mod file and place it on /libs
     //implementation(fg.deobf("curse.maven:hexerei-548599:3906977"))
-    runtimeOnly(fg.deobf("lib:hexerei:0.2.2"))
+    implementation(fg.deobf("lib:hexerei:0.2.2"))
 
     runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 

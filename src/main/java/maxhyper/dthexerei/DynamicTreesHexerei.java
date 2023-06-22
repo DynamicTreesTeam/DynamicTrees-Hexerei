@@ -6,6 +6,8 @@ import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import net.joefoxe.hexerei.config.HexConfig;
+import net.joefoxe.hexerei.world.gen.ModPlacedFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -37,6 +39,7 @@ public class DynamicTreesHexerei {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 
     private void gatherData(final GatherDataEvent event) {

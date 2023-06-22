@@ -1,29 +1,24 @@
 [
   {
-    "select": { "types": [ "forest", "overworld" ] },
+    "select": { "type": "swamp" },
     "apply": {
       "species" : {
         "method" : "splice_before",
         "random" : {
-          "dtarsnouveau:blue_archwood" : 1,
-          "dtarsnouveau:green_archwood" : 1,
-          "dtarsnouveau:purple_archwood" : 1,
-          "dtarsnouveau:red_archwood" : 1,
-          "..." : 4000
+          "hexerei:willow" : 1,
+          "..." : 4
         }
       }
     }
   },
-
   {
-    "only_if_loaded": "ars_elemental",
-    "select": { "types": [ "forest", "overworld" ] },
+    "select": { "type": "jungle" },
     "apply": {
       "species" : {
         "method" : "splice_before",
         "random" : {
-          "dtarsnouveau:yellow_archwood" : 1,
-          "..." : 1000
+          "hexerei:mahogany" : 1,
+          "..." : 4
         }
       }
     }
