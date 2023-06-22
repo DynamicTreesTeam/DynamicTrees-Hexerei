@@ -12,7 +12,7 @@
     }
   },
   {
-    "select": { "type": "jungle" },
+    "select": { "types": [ "jungle", "dense" ] },
     "apply": {
       "species" : {
         "method" : "splice_before",
