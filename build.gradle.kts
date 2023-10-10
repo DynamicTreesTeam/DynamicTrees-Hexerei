@@ -146,8 +146,7 @@ curseforge {
             mainArtifact(tasks.findByName("jar")) {
                 relations {
                     requiredDependency("dynamictrees")
-                    requiredDependency("ars-nouveau")
-                    optionalDependency("hexerei")
+                    requiredDependency("hexerei")
                 }
             }
         }
