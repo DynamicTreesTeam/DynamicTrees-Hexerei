@@ -1,6 +1,6 @@
 [
   {
-    "select": { "type": "swamp" },
+    "select": { "tag": "#forge:is_swamp" },
     "apply": {
       "species" : {
         "method" : "splice_before",
@@ -12,7 +12,7 @@
     }
   },
   {
-    "select": { "types": [ "jungle", "dense" ] },
+    "select": { "tags": [ "#minecraft:is_jungle", "#forge:is_dense" ] },
     "apply": {
       "species" : {
         "method" : "splice_before",

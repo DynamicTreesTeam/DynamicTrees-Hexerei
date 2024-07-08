@@ -17,6 +17,8 @@ plugins {
     id("idea")
     id("maven-publish")
     id("com.matthewprenger.cursegradle") version "1.4.0"
+    id("com.modrinth.minotaur") version "2.+"
+    id("com.harleyoconnor.autoupdatetool") version "1.0.7"
 }
 
 repositories {
@@ -93,15 +95,14 @@ dependencies {
 
     //Hexerei has 3rd party downloads disabled, so we cannot use the maven :(
     //download the mod file and place it on /libs
-    //implementation(fg.deobf("curse.maven:hexerei-548599:3906977"))
-    implementation(fg.deobf("lib:hexerei:0.2.2"))
+    implementation(fg.deobf("lib:hexerei:${property("hexereiVersion")}"))
 
     runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
-    runtimeOnly(fg.deobf("curse.maven:jade-324717:3970956"))
-    runtimeOnly(fg.deobf("mezz.jei:jei-$mcVersion:${property("jeiVersion")}"))
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
+    runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
     runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))
-    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.18.1:${property("suggestionProviderFixVersion")}"))
+    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.19:${property("suggestionProviderFixVersion")}"))
     runtimeOnly(fg.deobf("vazkii.patchouli:Patchouli:${property("patchouliVersion")}"))
 }
 
