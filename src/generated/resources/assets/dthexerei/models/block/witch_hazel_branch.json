@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "hexerei:block/witch_hazel_log",
+    "rings": "hexerei:block/witch_hazel_log_top"
+  }
+}

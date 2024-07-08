@@ -12,11 +12,11 @@
               "rarity": 1.0
             }
           ],
-          "name": "dthexerei:willow_seed"
+          "name": "dthexerei:witch_hazel_seed"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dthexerei:trees/voluntary/willow"
+  "random_sequence": "dthexerei:trees/voluntary/witch_hazel"
 }

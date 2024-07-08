@@ -99,10 +99,11 @@ dependencies {
 
     runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
-    runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
-    runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
-    runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))
-    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.19:${property("suggestionProviderFixVersion")}"))
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:5378180"))
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:5072729"))
+    runtimeOnly(fg.deobf("curse.maven:jei-238222:5101366"))
+    runtimeOnly(fg.deobf("curse.maven:cc-tweaked-282001:5118388"))
+    runtimeOnly(fg.deobf("curse.maven:suggestion-provider-fix-469647:4591193"))
     runtimeOnly(fg.deobf("vazkii.patchouli:Patchouli:${property("patchouliVersion")}"))
 }
 

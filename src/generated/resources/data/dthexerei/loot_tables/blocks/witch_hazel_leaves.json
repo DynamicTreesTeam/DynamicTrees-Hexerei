@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "hexerei:willow_leaves"
+              "name": "hexerei:witch_hazel_leaves"
             },
             {
               "type": "dynamictrees:seed_item",
@@ -47,10 +47,10 @@
                 },
                 {
                   "chances": [
-                    0.015625,
-                    0.03125,
-                    0.046875,
-                    0.0625
+                    0.0625,
+                    0.125,
+                    0.1875,
+                    0.25
                   ],
                   "condition": "minecraft:table_bonus",
                   "enchantment": "minecraft:fortune"
@@ -134,5 +134,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dthexerei:blocks/willow_leaves"
+  "random_sequence": "dthexerei:blocks/witch_hazel_leaves"
 }

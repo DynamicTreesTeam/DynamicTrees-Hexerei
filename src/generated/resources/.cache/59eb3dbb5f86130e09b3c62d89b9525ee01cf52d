@@ -1,0 +1,16 @@
+// 1.20.1	2024-07-08T15:52:45.417559	Loot Tables
+b775158903eeea8d2b3058f4a32cac29d5181ba3 data/dthexerei/loot_tables/blocks/mahogany_leaves.json
+46382dd2621b799399f48e8633f39956582bffbf data/dthexerei/loot_tables/blocks/willow_leaves.json
+c5ed5c3c032d9afb3c41fa961977e40d4e698ea6 data/dthexerei/loot_tables/blocks/witch_hazel_leaves.json
+bae79cdbea200b9a7a146d2f5b22a71534f4c69f data/dthexerei/loot_tables/trees/branches/mahogany.json
+22e7ebc156b6a443f697cc7d67e0965c7426df37 data/dthexerei/loot_tables/trees/branches/stripped_mahogany.json
+da4ff451088f88456587814a905da4e463c28271 data/dthexerei/loot_tables/trees/branches/stripped_willow.json
+b89f4d1d43e04bf59e1eeb6e8a5d94ec068f9e34 data/dthexerei/loot_tables/trees/branches/stripped_witch_hazel.json
+fb645dc572f1860beef9efdf8fe3ec200259361c data/dthexerei/loot_tables/trees/branches/willow.json
+93a54a3b98235a901d97f355b5eaddc00c9e6334 data/dthexerei/loot_tables/trees/branches/witch_hazel.json
+90c1860ead0c53c5ef1d247fb8e4138668c40f22 data/dthexerei/loot_tables/trees/leaves/mahogany.json
+8a37e029ec81f83e6f166bb26962972968c11461 data/dthexerei/loot_tables/trees/leaves/willow.json
+abf9649d291a8ccc3aa5cd68a9bfb25f4fcd07cb data/dthexerei/loot_tables/trees/leaves/witch_hazel.json
+18eb9a6407a515c614af7335b7b3c5bcc5cfb2fe data/dthexerei/loot_tables/trees/voluntary/mahogany.json
+3f690385697e1415ae27263382bb443595b91c18 data/dthexerei/loot_tables/trees/voluntary/willow.json
+3444d12989d95b7eac5a343fba09fcf2cf611876 data/dthexerei/loot_tables/trees/voluntary/witch_hazel.json

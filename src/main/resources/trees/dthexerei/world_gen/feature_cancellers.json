@@ -1,0 +1,9 @@
+[
+  {
+    "select": { "name": "hexerei:willow_swamp" },
+    "cancellers": {
+      "type": "tree",
+      "namespaces": ["minecraft", "hexerei"]
+    }
+  }
+]
