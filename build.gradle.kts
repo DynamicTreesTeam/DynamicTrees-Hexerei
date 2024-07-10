@@ -99,6 +99,7 @@ dependencies {
 
     runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:4618490"))
     runtimeOnly(fg.deobf("curse.maven:jade-324717:4433884"))
     runtimeOnly(fg.deobf("curse.maven:jei-238222:4615177"))
     runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))

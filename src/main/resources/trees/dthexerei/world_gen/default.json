@@ -1,12 +1,12 @@
 [
   {
-    "select": { "tag": "#forge:is_swamp" },
+    "select": { "tag": "#forge:is_swamp", "name": "!.*mangrove.*" },
     "apply": {
       "species" : {
         "method" : "splice_before",
         "random" : {
           "hexerei:willow" : 1,
-          "..." : 4
+          "..." : 16
         }
       }
     }
@@ -18,7 +18,32 @@
         "method" : "splice_before",
         "random" : {
           "hexerei:mahogany" : 1,
-          "..." : 4
+          "..." : 8
+        }
+      }
+    }
+  },
+  {
+    "select": { "name": "hexerei:willow_swamp" },
+    "apply": {
+      "species": {
+        "random": {
+          "swamp_oak": 1,
+          "hexerei:willow": 16
+        }
+      },
+      "chance": 1,
+      "density": [ 1.1 ]
+    }
+  },
+  {
+    "select": { "name": "minecraft:birch_forest" },
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "hexerei:witch_hazel" : 1,
+          "..." : 16
         }
       }
     }

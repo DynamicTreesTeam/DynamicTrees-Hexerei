@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dthexerei:witch_hazel",
+  "common_species": "dthexerei:witch_hazel",
+  "primitive_log": "hexerei:witch_hazel_log",
+  "primitive_stripped_log": "hexerei:stripped_witch_hazel_log",
+  "loot_volume_multiplier": 2.5
+}

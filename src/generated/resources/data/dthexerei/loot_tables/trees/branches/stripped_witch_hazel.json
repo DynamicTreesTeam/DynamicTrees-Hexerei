@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "hexerei:willow_log"
+          "name": "hexerei:stripped_witch_hazel_log"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dthexerei:trees/branches/willow"
+  "random_sequence": "dthexerei:trees/branches/stripped_witch_hazel"
 }

@@ -1,0 +1,8 @@
+{
+  "type": "scruffy",
+  "primitive_leaves": "hexerei:witch_hazel_leaves",
+  "cell_kit": "dynamictrees:azalea",
+  "scruffy_max_hydro": 2,
+  "scruffy_leaf_chance": 0.33,
+  "seed_drop_chances": [ 0.0625, 0.125, 0.1875, 0.25 ]
+}

@@ -1,8 +1,8 @@
 {
   "parent": "dynamictrees:block/smartmodel/sapling",
+  "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "particle": "hexerei:block/mahogany_leaves",
-    "log": "hexerei:block/mahogany_log",
-    "leaves": "hexerei:block/mahogany_leaves"
+    "leaves": "hexerei:block/mahogany_leaves",
+    "log": "hexerei:block/mahogany_log"
   }
 }

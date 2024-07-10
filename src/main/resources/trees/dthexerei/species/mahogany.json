@@ -7,10 +7,10 @@
   "growth_rate": 0.9,
   "leaves_properties": "dthexerei:mahogany",
   "environment_factors" : {
-    "cold": 0.15,
-    "dry": 0.20,
-    "hot": 1.1,
-    "wet": 1.1
+    "#forge:is_cold": 0.15,
+    "#forge:is_dry": 0.20,
+    "#forge:is_hot": 1.1,
+    "#forge:is_wet": 1.1
   },
   "perfect_biomes": { "types": [ "jungle", "overworld" ] },
   "primitive_sapling": "hexerei:mahogany_sapling",
