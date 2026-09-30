@@ -1,9 +1,23 @@
 [
   {
-    "select": { "name": "hexerei:willow_swamp" },
+    "select": { "tag": "#c:is_swamp" },
     "cancellers": {
-      "type": "tree",
-      "namespaces": ["minecraft", "hexerei"]
+      "types": [ "tree", "dthexerei:hexerei_tree" ],
+      "namespaces": [ "hexerei", "minecraft" ]
+    }
+  },
+  {
+    "select": { "tag": "#minecraft:is_jungle" },
+    "cancellers": {
+      "types": [ "tree", "dthexerei:hexerei_tree" ],
+      "namespaces": [ "hexerei", "minecraft" ]
+    }
+  },
+  {
+    "select": { "name": "minecraft:birch_forest" },
+    "cancellers": {
+      "types": [ "tree", "dthexerei:hexerei_tree" ],
+      "namespaces": [ "hexerei", "minecraft" ]
     }
   }
 ]

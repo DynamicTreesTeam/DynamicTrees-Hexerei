@@ -1,0 +1,95 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.120'
+}
+
+version = project.mod_version
+group = project.mod_group_id
+
+repositories {
+    mavenLocal()
+    maven {
+        url = "https://maven.neoforged.net/releases/"
+    }
+    maven {
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+base {
+    archivesName = project.mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/generated/resources'
+        }
+    }
+}
+
+neoForge {
+    version = project.neoforge_version
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+
+    runs {
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'forge.logging.console.level', 'debug'
+        }
+
+        client {
+            client()
+        }
+
+        server {
+            server()
+        }
+
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all',
+                    '--output', file('src/generated/resources/').getAbsolutePath(),
+                    '--existing', file('src/main/resources').getAbsolutePath(),
+                    '--existing-mod', 'dynamictrees',
+                    '--existing-mod', 'hexerei'
+        }
+    }
+}
+
+dependencies {
+    implementation "maven.modrinth:vdjF5PL5:G4uJ0UA0"
+    implementation files("/home/overfl0w/.local/share/PrismLauncher/instances/Kari's Cove/minecraft/mods/hexerei-0.5.0.3.jar")
+}
+
+tasks.named('jar') {
+    includeEmptyDirs = false
+    manifest.attributes['Implementation-Version'] = project.version
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    exclude '**/.cache/**'
+
+    eachFile { details ->
+        if (details.path.startsWith('data/')) {
+            details.path = details.path
+                    .replace('loot_tables/', 'loot_table/')
+                    .replace('/tags/blocks/', '/tags/block/')
+                    .replace('/tags/items/', '/tags/item/')
+                    .replace('/forge/biome_modifier/', '/neoforge/biome_modifier/')
+                    .replaceFirst('^data/forge/', 'data/neoforge/')
+        }
+    }
+}

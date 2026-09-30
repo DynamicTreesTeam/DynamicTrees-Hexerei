@@ -6,12 +6,8 @@
   "lowest_branch_height": 7,
   "growth_rate": 0.9,
   "leaves_properties": "dthexerei:mahogany",
-  "environment_factors" : {
-    "#forge:is_cold": 0.15,
-    "#forge:is_dry": 0.20,
-    "#forge:is_hot": 1.1,
-    "#forge:is_wet": 1.1
-  },
+  "preferred_climate": "tropical",
+  "climate_tolerance": 0.3,
   "perfect_biomes": { "types": [ "jungle", "overworld" ] },
   "primitive_sapling": "hexerei:mahogany_sapling",
   "features" : [

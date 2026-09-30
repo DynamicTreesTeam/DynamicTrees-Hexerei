@@ -16,28 +16,28 @@
                     {
                       "condition": "minecraft:match_tool",
                       "predicate": {
-                        "items": [
-                          "minecraft:shears"
-                        ]
+                        "items": "minecraft:shears"
                       }
                     },
                     {
                       "condition": "minecraft:match_tool",
                       "predicate": {
-                        "enchantments": [
-                          {
-                            "enchantment": "minecraft:silk_touch",
-                            "levels": {
-                              "min": 1
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
                             }
-                          }
-                        ]
+                          ]
+                        }
                       }
                     }
                   ]
                 }
               ],
-              "name": "hexerei:witch_hazel_leaves"
+              "name": "hexerei:mahogany_leaves"
             },
             {
               "type": "dynamictrees:seed_item",
@@ -47,10 +47,10 @@
                 },
                 {
                   "chances": [
-                    0.0625,
-                    0.125,
-                    0.1875,
-                    0.25
+                    0.015625,
+                    0.03125,
+                    0.046875,
+                    0.0625
                   ],
                   "condition": "minecraft:table_bonus",
                   "enchantment": "minecraft:fortune"
@@ -76,22 +76,22 @@
               {
                 "condition": "minecraft:match_tool",
                 "predicate": {
-                  "items": [
-                    "minecraft:shears"
-                  ]
+                  "items": "minecraft:shears"
                 }
               },
               {
                 "condition": "minecraft:match_tool",
                 "predicate": {
-                  "enchantments": [
-                    {
-                      "enchantment": "minecraft:silk_touch",
-                      "levels": {
-                        "min": 1
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
                       }
-                    }
-                  ]
+                    ]
+                  }
                 }
               }
             ]
@@ -134,5 +134,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dthexerei:blocks/witch_hazel_leaves"
+  "random_sequence": "dthexerei:blocks/mahogany_leaves"
 }

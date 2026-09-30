@@ -1,27 +1,22 @@
 package maxhyper.dthexerei;
 
-import com.ferreusveritas.dynamictrees.api.GatherDataHelper;
-import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.data.GatherDataHelper;
+import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 @Mod(DynamicTreesHexerei.MOD_ID)
 public class DynamicTreesHexerei {
     public static final String MOD_ID = "dthexerei";
 
-    public DynamicTreesHexerei() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        modEventBus.addListener(this::gatherData);
-
-        RegistryHandler.setup(MOD_ID);
+    public DynamicTreesHexerei(IEventBus eventBus) {
+        eventBus.addListener(this::gatherData);
+        NeoForgeRegistryHandler.setup(MOD_ID, eventBus);
     }
 
     private void gatherData(final GatherDataEvent event) {
@@ -32,4 +27,7 @@ public class DynamicTreesHexerei {
         );
     }
 
+    public static ResourceLocation location(final String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
 }

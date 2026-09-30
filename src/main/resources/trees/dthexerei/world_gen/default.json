@@ -1,35 +1,12 @@
 [
   {
-    "select": { "tag": "#forge:is_swamp", "name": "!.*mangrove.*" },
-    "apply": {
-      "species" : {
-        "method" : "splice_before",
-        "random" : {
-          "hexerei:willow" : 1,
-          "..." : 16
-        }
-      }
-    }
-  },
-  {
-    "select": { "tags": [ "#minecraft:is_jungle", "#forge:is_dense" ] },
-    "apply": {
-      "species" : {
-        "method" : "splice_before",
-        "random" : {
-          "hexerei:mahogany" : 1,
-          "..." : 8
-        }
-      }
-    }
-  },
-  {
-    "select": { "name": "hexerei:willow_swamp" },
+    "select": { "tag": "#c:is_swamp", "name": "!.*mangrove.*" },
     "apply": {
       "species": {
+        "method": "splice_before",
         "random": {
-          "swamp_oak": 1,
-          "hexerei:willow": 16
+          "hexerei:willow": 16,
+          "...": 1
         }
       },
       "chance": 1,
@@ -37,13 +14,25 @@
     }
   },
   {
+    "select": { "tags_or": [ "#minecraft:is_jungle", "#c:is_dense_vegetation" ] },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "hexerei:mahogany": 1,
+          "...": 1
+        }
+      }
+    }
+  },
+  {
     "select": { "name": "minecraft:birch_forest" },
     "apply": {
-      "species" : {
-        "method" : "splice_before",
-        "random" : {
-          "hexerei:witch_hazel" : 1,
-          "..." : 16
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "hexerei:witch_hazel": 1,
+          "...": 2
         }
       }
     }

@@ -6,10 +6,8 @@
   "up_probability": 4,
   "soil_longevity": 1,
   "leaves_properties": "dthexerei:witch_hazel",
-  "environment_factors" : {
-    "#forge:is_snowy": 0.75,
-    "#forge:is_dry": 0.5
-  },
+  "preferred_climate": "temperate",
+  "climate_tolerance": 0.5,
   "perfect_biomes": { "types": [ "swamp", "overworld" ] },
   "primitive_sapling": "hexerei:witch_hazel_sapling"
 }
